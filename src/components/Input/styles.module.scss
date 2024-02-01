@@ -1,0 +1,27 @@
+.input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #6E8BB74D;
+    background: var(--black-white-white, #FFF);
+    color: var(--Black, #000);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: -0.084px;
+}
+
+.input::placeholder {
+    color: var(--icon-color, #FFF);
+}
+
+.input.error {
+    color: var(--Text-input-Error, #F76659);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    letter-spacing: -0.096px;
+    border: 2px solid var(--Text-input-Error, #F76659);
+    background: var(--black-white-white, #FFF);
+}
