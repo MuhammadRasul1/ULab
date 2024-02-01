@@ -1,4 +1,66 @@
-import { Box, Button, Flex, FormControl, FormLabel, Heading, InputGroup, InputRightElement } from "@chakra-ui/react";
+// import { Box, Button, FormControl, Heading, Input, InputGroup, InputRightElement } from "@chakra-ui/react";
+// import { Link } from "react-router-dom";
+// import { useLoginProps } from "./useLoginProps";
+
+// export const Login = () => {
+
+//   const { show, handleClick, onSubmit, handleSubmit, register } = useLoginProps();
+
+//   return <Box>
+//     <FormControl onSubmit={handleSubmit(onSubmit)} as="form">
+//       <Heading textAlign="center" mb={2}>Login</Heading>
+//       <Box display="flex" flexDirection="column" gap={3} maxWidth="400px" margin="0 auto">
+//         <Input type='text' placeholder="Enter email" {...register("login_name")} />
+//         <InputGroup size='md'>
+//           <Input
+//             {...register("password")}
+//             pr='4.5rem'
+//             type={show ? "text" : "password"}
+//             placeholder='Enter password'
+//           />
+//           <InputRightElement width='4.5rem'>
+//             <Button h='1.75rem' size='sm' onClick={handleClick}>
+//               {show ? "Hide" : "Show"}
+//             </Button>
+//           </InputRightElement>
+//         </InputGroup>
+//         <Button type="submit">Submit</Button>
+//       </Box>
+//     </FormControl>
+//     <Box display="flex" justifyContent="center" color="dodgerblue"><Link to="/auth/register">register</Link></Box>
+//   </Box>;
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import { Box, Button, FormControl, FormLabel, Heading, InputGroup, InputRightElement } from "@chakra-ui/react";
 import cls from "./styles.module.scss";
 import AuthImg from "assets/img/auth-img.png"
 import EmailOutline from "assets/img/icon/mail_outline.svg";
@@ -21,7 +83,7 @@ export const Login = () => {
 
       <Box className={cls.wrapperRight}>
         <h1 className={cls.title}>Вход в платформу</h1>
-        <FormControl onSubmit={handleSubmit(onSubmit)} maxWidth="592px" as="form">
+        <FormControl maxWidth="592px" as="form">
           <Box className={cls.inputWrapper}>
             <FormLabel className={cls.label} htmlFor="email">
               Email или номер телефона 
@@ -33,8 +95,9 @@ export const Login = () => {
                 type='email'
                 id="email" 
                 placeholder="Введите e-mail" 
-                {...register("login_name")} 
-                required />
+                {...register("login_name")}
+                required 
+              />
             </Box>
           </Box>
 
@@ -66,45 +129,52 @@ export const Login = () => {
           </Box>
 
           <Box display="flex" flexDirection="column">
-            <Button type="submit" className={cls.btnSubmit} onClick={handleSubmit(onSubmit)}>Войти</Button>
+            <Button type="submit" className={cls.btnSubmit}>Войти</Button>
             <Link className={cls.registerLink} to="/auth/register">Зарегистрироваться</Link>  
           </Box>
 
           <span className={cls.text}>Copyright © URecruit. Все права защищены</span>
         </FormControl>
-      </Box>
+       </Box>
     </Box>
   )
 };
 
-{/* <Box  className={cls.inputWrapper}>
-            <FormLabel className={cls.label} htmlFor="email">Пароль <span className={cls.required}>*</span></FormLabel>
-            <Box display={"flex"}>
-              <img src={LockOpen} alt="lock_open" width={24} height={24}/>
-              <Input type='password' id="password" placeholder="Введите пароль" {...register("login_password")} required />
-            </Box>
-          </Box> */}
 
-// return <Box>
-//   <FormControl onSubmit={handleSubmit(onSubmit)} as="form">
-//     <Heading textAlign="center" mb={2}>Login</Heading>
-//     <Box display="flex" flexDirection="column" gap={3} maxWidth="400px" margin="0 auto">
-//       <Input type='text' placeholder="Enter email" {...register("login_name")} />
-//       <InputGroup size='md'>
-//         <Input
-//           {...register("password")}
-//           pr='4.5rem'
-//           type={show ? "text" : "password"}
-//           placeholder='Enter password'
-//         />
-//         <InputRightElement width='4.5rem'>
-//           <Button h='1.75rem' size='sm' onClick={handleClick}>
-//             {show ? "Hide" : "Show"}
-//           </Button>
-//         </InputRightElement>
-//       </InputGroup>
-//       <Button type="submit">Submit</Button>
-//     </Box>
-//   </FormControl>
-//   <Box display="flex" justifyContent="center" color="dodgerblue"><Link to="/auth/register">register</Link></Box>
-// </Box>;
+
+
+
+
+
+
+// {/* <Box  className={cls.inputWrapper}>
+//             <FormLabel className={cls.label} htmlFor="email">Пароль <span className={cls.required}>*</span></FormLabel>
+//             <Box display={"flex"}>
+//               <img src={LockOpen} alt="lock_open" width={24} height={24}/>
+//               <Input type='password' id="password" placeholder="Введите пароль" {...register("login_password")} required />
+//             </Box>
+//           </Box> */}
+
+// // return <Box>
+// //   <FormControl onSubmit={handleSubmit(onSubmit)} as="form">
+// //     <Heading textAlign="center" mb={2}>Login</Heading>
+// //     <Box display="flex" flexDirection="column" gap={3} maxWidth="400px" margin="0 auto">
+// //       <Input type='text' placeholder="Enter email" {...register("login_name")} />
+// //       <InputGroup size='md'>
+// //         <Input
+// //           {...register("password")}
+// //           pr='4.5rem'
+// //           type={show ? "text" : "password"}
+// //           placeholder='Enter password'
+// //         />
+// //         <InputRightElement width='4.5rem'>
+// //           <Button h='1.75rem' size='sm' onClick={handleClick}>
+// //             {show ? "Hide" : "Show"}
+// //           </Button>
+// //         </InputRightElement>
+// //       </InputGroup>
+// //       <Button type="submit">Submit</Button>
+// //     </Box>
+// //   </FormControl>
+// //   <Box display="flex" justifyContent="center" color="dodgerblue"><Link to="/auth/register">register</Link></Box>
+// // </Box>;

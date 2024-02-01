@@ -6,7 +6,7 @@ export const Input = React.forwardRef((props, ref) => {
     const { error, ...rest } = props
 
     return <>
-        <Input
+        <input
             className={clsx(cls.input, { [cls.error]: !!error?.message })}
             {...rest}
             ref={ref}

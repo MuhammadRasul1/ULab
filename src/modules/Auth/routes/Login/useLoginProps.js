@@ -2,12 +2,11 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { authStore } from "store/auth.store";
 import { useMutation } from "@tanstack/react-query"
-import request from "services/httpRequest";
-// import axios from "axios"
+import axios from "axios"
 
-// const request = axios.create({
-//   baseURL: "http://54.196.215.223:8000/v1/"
-// })
+const request = axios.create({
+  baseURL: "http://54.196.215.223:8000/v1/"
+})
 
 export const useLoginProps = () => {
 
